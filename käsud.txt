@@ -1,0 +1,11 @@
+Prerequisite packages: Express, Body-Parser, EJS, Path
+
+
+opilane@ORDI-402558 MINGW64 ~/projects/EJS-Template-Kald (master)
+$ npm init
+
+opilane@ORDI-402558 MINGW64 ~/projects/EJS-Template-Kald (master)
+$ npm i express body-parser ejs path
+
+opilane@ORDI-402558 MINGW64 ~/projects/EJS-Template-Kald (master)
+$ npm start

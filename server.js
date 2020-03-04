@@ -18,7 +18,7 @@ app.set('views', 'views');
 
 
 app.use(userRoute);
-app.use('/admin',adminRoute);
+app.use('/admin', adminRoute.Router);
 
 
 app.use(function(req, res, next){
@@ -27,7 +27,8 @@ app.use(function(req, res, next){
     res.status(404).render('404', 
     {pageTitle: "Page not Found.", 
     pageNotFound: "Our apologies, but we were unable to find the requested page.",
-    message: "Please view our latest offerings.",});
+    message: "Please view our latest offerings.",
+    path: ""});
 
 })
 app.listen(5000, ()=> {

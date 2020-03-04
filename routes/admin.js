@@ -14,7 +14,8 @@ router.get('/add-product', function(req, res){
         products: "Shop",
         addProduct: "Add Product",
         itemTitle: "Title",
-        addProductBtn: "Add"
+        addProductBtn: "Add",
+        path: "/admin/add-product"
 
     });
 });
@@ -25,4 +26,6 @@ router.post('/add-product', function(req, res){
     res.redirect('/');
 })
 
-module.exports = router;
+// module.exports = router;
+exports.Router = router;
+exports.products = products;
